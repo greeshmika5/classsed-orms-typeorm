@@ -9,6 +9,8 @@ import { Post } from './entity/Post'
 const app = express()
 app.use(express.json())
 
+
+
 // CREATE
 app.post('/users', async (req: Request, res: Response) => {
   const { name, email, role } = req.body
